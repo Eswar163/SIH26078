@@ -1,0 +1,130 @@
+/*
+  Trikaal design tokens.
+  The palette comes from the chart room: plotting paper, sea and land tints of
+  a synoptic chart, blue-black drafting ink, the magenta of an aviation course
+  line (forecast tracks and selection only), and IMD's own warning colours
+  (severity only).
+*/
+
+:root {
+  color-scheme: light;
+
+  --paper: #f8f9f7;
+  --paper-2: #eef1ef;
+  --paper-3: #e6eae8;
+  --sea: #d8e3e6;
+  --land: #f0f1eb;
+  --land-edge: #c3ccc9;
+
+  --ink: #15232b;
+  --ink-2: #33424a;
+  --graphite: #5a6870;
+  --fog: #8a979d;
+  --rule: #d1d9db;
+  --rule-2: #e2e7e8;
+
+  --track: #b0136b;
+  --track-2: #d34f98;
+  --track-wash: rgba(176, 19, 107, 0.1);
+  --track-line: rgba(176, 19, 107, 0.5);
+
+  --imd-green: #3b8a4a;
+  --imd-yellow: #e2bd17;
+  --imd-orange: #e1731c;
+  --imd-red: #c32a21;
+  --imd-yellow-ink: #5c4a00;
+
+  --heat: #c9592a;
+  --cold: #3d6ea8;
+  --rain: #2a7f93;
+
+  --halo: rgba(248, 249, 247, 0.92);
+  --shadow: 0 1px 2px rgba(21, 35, 43, 0.08), 0 8px 24px rgba(21, 35, 43, 0.12);
+
+  --font: 'Archivo Variable', 'Archivo', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --mono: 'IBM Plex Mono', ui-monospace, 'Cascadia Mono', Consolas, monospace;
+
+  --fs-11: 11px;
+  --fs-12: 12px;
+  --fs-13: 13px;
+  --fs-15: 15px;
+  --fs-18: 18px;
+  --fs-22: 22px;
+  --fs-28: 28px;
+
+  --r-1: 3px;
+  --r-2: 5px;
+  --r-3: 8px;
+
+  --topbar: 46px;
+  --timeline: 148px;
+  --roster: 284px;
+  --dossier: 404px;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --paper: #121a1f;
+  --paper-2: #0d1418;
+  --paper-3: #18232a;
+  --sea: #0f1d24;
+  --land: #1b262d;
+  --land-edge: #33434b;
+
+  --ink: #e2e9eb;
+  --ink-2: #c3cdd1;
+  --graphite: #94a2a8;
+  --fog: #65747b;
+  --rule: #26343b;
+  --rule-2: #1c282e;
+
+  --track: #f052a8;
+  --track-2: #f58bc4;
+  --track-wash: rgba(240, 82, 168, 0.12);
+  --track-line: rgba(240, 82, 168, 0.55);
+
+  --imd-green: #57a866;
+  --imd-yellow: #e6c43a;
+  --imd-orange: #ee8a3a;
+  --imd-red: #e2483e;
+  --imd-yellow-ink: #2b2300;
+
+  --heat: #ec7b47;
+  --cold: #6f9ad1;
+  --rain: #4fa9bb;
+
+  --halo: rgba(18, 26, 31, 0.9);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 10px 30px rgba(0, 0, 0, 0.45);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']):not([data-theme='dark']) {
+    color-scheme: dark;
+    --paper: #121a1f;
+    --paper-2: #0d1418;
+    --paper-3: #18232a;
+    --sea: #0f1d24;
+    --land: #1b262d;
+    --land-edge: #33434b;
+    --ink: #e2e9eb;
+    --ink-2: #c3cdd1;
+    --graphite: #94a2a8;
+    --fog: #65747b;
+    --rule: #26343b;
+    --rule-2: #1c282e;
+    --track: #f052a8;
+    --track-2: #f58bc4;
+    --track-wash: rgba(240, 82, 168, 0.12);
+    --track-line: rgba(240, 82, 168, 0.55);
+    --imd-green: #57a866;
+    --imd-yellow: #e6c43a;
+    --imd-orange: #ee8a3a;
+    --imd-red: #e2483e;
+    --imd-yellow-ink: #2b2300;
+    --heat: #ec7b47;
+    --cold: #6f9ad1;
+    --rain: #4fa9bb;
+    --halo: rgba(18, 26, 31, 0.9);
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 10px 30px rgba(0, 0, 0, 0.45);
+  }
+}

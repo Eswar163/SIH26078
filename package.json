@@ -1,0 +1,38 @@
+{
+  "name": "trikaal",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Trikaal: weather event intelligence on synthetic NWP output. Detects, tracks, fingerprints and forecasts weather systems over the Indian region.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "bench": "vitest run tests/perf.bench.test.ts",
+    "geo": "node scripts/build-geo.mjs",
+    "lint": "oxlint src tests"
+  },
+  "dependencies": {
+    "@fontsource-variable/archivo": "^5.3.0",
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "zustand": "^5.0.15"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@types/topojson-client": "^3.1.5",
+    "@vitejs/plugin-react": "^6.1.1",
+    "oxlint": "^1.81.0",
+    "topojson-client": "^3.1.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0",
+    "vitest": "^5.0.3",
+    "world-atlas": "^2.0.2"
+  }
+}
